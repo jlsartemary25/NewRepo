@@ -23,6 +23,11 @@ namespace Baseline_01.Controllers
         }
 
         // GET: api/Users/5
+        /// <summary>
+        /// This operation is used to retrieve single user details
+        /// </summary>
+        /// <param name="id">Given User Identity Value</param>
+        /// <returns>User object</returns>
         [ResponseType(typeof(User))]
         public IHttpActionResult GetUser(int id)
         {
